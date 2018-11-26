@@ -1,6 +1,39 @@
 <html>
   <head>
     <title>Todo App</title>
+    <style>
+    ul{
+      list-style-type: none;
+    }
+    ul li{
+      border-bottom:1px solid #eee;
+      height:30px;
+      line-height:30px;
+    }
+    .inputStyle {
+      width: 300px;
+      height:35px;
+      line-height: 35px;
+      background:transparent;
+      border:1px solid #ccc;
+      border-radius:5px;
+      padding-left:5px;
+      font-size: 14px;
+      margin-left:10px;
+    }
+    .addButton {
+      height:35px;
+      margin-left:10px;
+      line-height: 30px;
+      border-radius: 8px;
+      padding:5px 10px;
+    }
+
+    .finishedItem{
+      text-decoration: line-through;
+      color:#ccc;
+    }
+    </style>
   </head>
   <body>
     <div id="root"></div>
