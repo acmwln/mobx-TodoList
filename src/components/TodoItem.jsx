@@ -13,7 +13,7 @@ export default class TodoItem extends Component{
     }).isRequired
   };
 
-  handleChkChange = (e) => {
+  handleCheckChange = (e) => {
     this.props.todo.toggle();
   }
 
@@ -24,7 +24,7 @@ export default class TodoItem extends Component{
             <input
                 type="checkbox"
                 checked={todo.finished}
-                onChange={this.handleChkChange}
+                onChange={this.handleCheckChange}
               />
               <span className = {[todo.finished && 'finishedItem']}>{todo.title}</span>
           </li>
